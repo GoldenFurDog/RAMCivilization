@@ -47,8 +47,8 @@ public class Civilization {
         }
 
         if ((theoPoint < 1000.0) && growing) {
-            theoPoint += (random.nextDouble(0.5, 1) * 0.2 * (((1000 - techPoint) / 1000 * 60) - ((Math.abs(techPoint - 500)) / 1000 * 80) + 40));
-            theoPoint += (random.nextDouble(-0.1, 0.3) * (techPoint / 400) );
+            theoPoint += (random.nextDouble(0.5, 1) * 0.05 * (((1000 - techPoint) / 1000 * 60) - ((Math.abs(techPoint - 500)) / 1000 * 80) + 40));
+            theoPoint += (random.nextDouble(-0.1, 0.3) * (techPoint / 4000) );
         }
         if (theoPoint > 1000) {
             theoPoint = 1000.0;

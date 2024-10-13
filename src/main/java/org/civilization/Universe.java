@@ -33,7 +33,7 @@ public class Universe {
         civilizations.addAll(newCiv);
         newCiv.clear();
 
-        if ((Universe.getBoolByPossibility((double) (10000 - civilizations.size()) / 50000))||Universe.getBoolByPossibility(0.00001)) {
+        if ((Universe.getBoolByPossibility((double) (10000 - civilizations.size()) / 50000)) || Universe.getBoolByPossibility(0.00001)) {
             newCivilization();
         }
 
